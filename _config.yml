@@ -5,11 +5,9 @@ collections:
   kids:
     title: Kids
     output: true
-    permalink: "/kids/:title/"
   mens:
     title: Mens
     output: true
-    permalink: "/mens/:title/"
   posts:
     title: Posts
     output: true
@@ -19,7 +17,6 @@ collections:
   womens:
     title: Womens
     output: true
-    permalink: "/womens/:title/"
 defaults:
 - scope:
     path: ''
@@ -33,27 +30,3 @@ defaults:
   values:
     layout: page
 permalink: pretty
-- scope:
-    path: ''
-    type: kids
-  values:
-    layout: product
-    permalink: "/kids/:title/"
-    name: ''
-    image: ''
-- scope:
-    path: ''
-    type: mens
-  values:
-    layout: product
-    permalink: "/mens/:title/"
-    name: ''
-    image: ''
-- scope:
-    path: ''
-    type: womens
-  values:
-    layout: product
-    permalink: "/womens/:title/"
-    name: ''
-    image: ''
