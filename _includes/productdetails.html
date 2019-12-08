@@ -1,20 +1,10 @@
----
-layout: default
-head: snipcart.html
----
-
-<div class="product-details">
-  <img src="{{ page.image }}" alt="{{ page.name }}" class="thumbnail"/>
-  <div class="product-description">
-    <p>{{ page.name }}</p>
-    <p>{{ page.content }}</p>
-    <button class="snipcart-add-item"
-      data-item-name="{{ page.name }}"
-      data-item-id="{{ page.sku }}"
-      data-item-image="{{ page.image }}"
-      data-item-url="{{ site.url }}{{ page.url }}"
-      data-item-price="{{ page.price }}">
-      Buy it for {{ page.price }} $
-    </button>
-  </div>
-</div>
+<button
+  class="buy-button snipcart-add-item"
+  data-item-id="{{ product.identifier }}"
+  data-item-name="{{ product.name }}"
+  data-item-price="{{ product.price }}"
+  data-item-image="{{ product.image }}"
+  data-item-url="{{ site.baseurl }}{{ page.url }}"
+  data-item-description="{{ product.content | remove: '<p>' | remove: '</p>' }}">
+  Add to cart (${{ product.price }})
+</button>
