@@ -2,19 +2,20 @@
 layout: default
 ---
 
-<div class="product-details">
-  <img src="{{ page.image }}" alt="{{ page.name }}" class="thumbnail"/>
-  <div class="product-description">
+
+<div class="product">
+    <img src="{{ page.image }}" alt="{{ page.name }}" class="thumbnail"/>
     <p>{{ page.name }}</p>
-
-    <p>{{ page.desc }}</p>
-
-    <button class="buy-button snipcart-add-item"
-      data-item-name="{{ page.name }}"
-      data-item-image="{{ page.image }}"
-      data-item-url="{{ site.url }}{{ page.url }}"
-      data-item-price="{{ page.price }}">
-      Buy it for {{ page.price }} $
-    </button>
-  </div>
+<button
+  class="buy-button snipcart-add-item"
+  data-item-id="{{ page.identifier }}"
+  data-item-name="{{ page.name }}"
+  data-item-price="{{ page.price }}"
+  data-item-image="{{ page.image }}"
+  data-item-url="{{ site.baseurl }}{{ page.url }}"
+  data-item-description="{{ product.content | remove: '<p>' | remove: '</p>' }}">
+  Add to cart (${{ product.price }})
+</button>
+  
 </div>
+
