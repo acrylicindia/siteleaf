@@ -4,11 +4,6 @@
     <p>{{ product.name }}</p>
   </a>
 
-  <button class="buy-button snipcart-add-item"
-    data-item-name="{{ product.name }}"
-    data-item-image="{{ product.image }}"
-    data-item-url="{{ site.url }}{{product.url }}"
-    data-item-price="{{ product.price }}">
-    Buy it for {{ product.price }} $
-  </button>
+ {% include productdetails.html %}
+  
 </div>
