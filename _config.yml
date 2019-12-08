@@ -2,14 +2,17 @@
 title: Acrylic India
 timezone: UTC
 collections:
+  mens:
+    title: Mens
+    output: true
   posts:
     title: Posts
     output: true
-  products:
-    title: Products
-    output: true
   uploads:
     title: Uploads
+    output: true
+  womens:
+    title: Womens
     output: true
 defaults:
 - scope:
