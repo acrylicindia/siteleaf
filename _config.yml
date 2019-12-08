@@ -1,3 +1,4 @@
+---
 title: Acrylic India
 timezone: UTC
 collections:
@@ -29,33 +30,3 @@ defaults:
   values:
     layout: page
 permalink: pretty
-- scope:
-    path: ''
-    type: kids
-  values:
-    layout: product
-    permalink: "/kids/:title/"
-    name: ''
-    desc: ''
-    price: 0.0
-    image: ''
-- scope:
-    path: ''
-    type: mens
-  values:
-    layout: product
-    permalink: "/mens/:title/"
-    name: ''
-    desc: ''
-    price: 0.0
-    image: 
-- scope:
-    path: ''
-    type: womens
-  values:
-    layout: product
-    permalink: "/womens/:title/"
-    name: ''
-    desc: ''
-    price: 0.0
-    image: 
