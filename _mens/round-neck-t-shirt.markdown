@@ -6,6 +6,7 @@ desc: We’ve seen men going crazy over trendy t-shirts. The mod designs, comfy 
   out.
 price: 499
 image: "/uploads/5dc2c38315f3a.jpg"
+identifier: mens-tshirt
 layout: productdetails
 ---
 
