@@ -30,3 +30,5 @@ defaults:
   values:
     layout: page
 permalink: pretty
+
+snipcart_api_key: OWNlYjBkNDAtNzhlNi00ZGQzLTljMTctNjc5ZmJmNzM2MGFlNjM3MTEyNDI2MTEyOTk3NTIz
