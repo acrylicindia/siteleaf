@@ -1,9 +1,0 @@
----
-title: Womens
-layout: default
----
-
-
-{% for product in site.womens %}
- {% include product.html %}
-{% endfor %}
