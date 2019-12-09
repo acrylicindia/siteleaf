@@ -12,8 +12,8 @@ layout: default
   data-item-price="{{ page.price }}"
   data-item-image="{{ page.image }}"
   data-item-url="{{ site.baseurl }}{{ page.url }}"
-  data-item-description="{{ product.content | remove: '<p>' | remove: '</p>' }}">
-  Add to cart (${{ product.price }})
+  data-item-description="{{ page.content | remove: '<p>' | remove: '</p>' }}">
+  Add to cart (${{ page.price }})
 </button>
   
 </div>
