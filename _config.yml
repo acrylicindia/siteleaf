@@ -2,9 +2,6 @@
 title: Acrylic India
 timezone: UTC
 collections:
-  kids:
-    title: Kids
-    output: true
   mens:
     title: Mens
     output: true
